@@ -1,0 +1,258 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.5;
+  /* font-weight: 400; */
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header > #section-default-header{
+  display: flex;
+  justify-content: space-between;
+}
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+header > section > nav{
+  margin-right: 3rem;
+  display: inline-flex;
+  gap: 1rem;
+}
+body{
+  padding: 1.5rem;
+}
+h1.title{
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
+}
+section#dashboard-section{
+  margin: 0.7rem;
+  display: flex;
+
+  gap: 3rem;
+}
+.dashboard-value{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+p.dashboard-value-number{
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.dash-info-box, #product-info > span{
+  display: flex;
+  font-size: 1.2rem;
+  background-color: #181818;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  box-shadow: 0.5rem 0.7rem #202020;
+  margin-bottom: 1rem;
+}
+.dash-info-box{
+  height: 13.5rem;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+#action-section{
+  width: 100%;
+  gap: 2.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+}
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.header-row th {
+  background-color: #181818;
+  color: white;
+  padding: 0.9rem;
+  text-align: left;
+}
+.item-row td {
+  border-top: 1px solid #ccc;
+  padding: 0.7rem;
+}
+.item-row button, #product-edit button {
+  padding: 0.64rem 0.9rem;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #181818;
+  cursor: pointer;
+}
+.item-row button:hover, #product-edit > button:hover {
+  transform: scale(1.04);
+  background-color: #666666;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  transition: 0.4s;
+}
+.button-actions{
+  display: flex;
+  gap: 0.3rem;
+}
+#product-edit{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  align-items: center;
+}
+#product-info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+#product-info-register-att > span{
+  margin-right: 3rem;
+}
+#title-new-all-item{
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #666666;
+}
+form#item-edit-and-create-container{
+  display: grid;
+  justify-content: center;
+  margin-top: 1rem;
+}
+form#item-edit-and-create-container > #inputs-edit-and-create{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  gap: 2.4rem;
+}
+form#item-edit-and-create-container >
+#inputs-edit-and-create > div, select{
+  display: flex;
+  flex-direction: column;
+}
+form#item-edit-and-create-container >
+#inputs-edit-and-create > div > input, select {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+textarea{
+  width: 100%;
+  padding: 0.5rem;
+}
+#btn-save, #feedback-box{
+  padding: 0.7rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+#btn-save{
+  background-color: #06b9f0;
+  cursor: pointer;
+}
+#out-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#feedback-box{
+  background-color: #0da351;
+  padding: 0.5rem;
+}
+/* Classe para aplicar opacidade */
+.feedback-fade {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Classe para remover a opacidade */
+.feedback-fade-hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+}
+.input-error{
+  border: 1.7px solid #ff0202;
+  transition: 0.6s;
+  transform: scale(1.03);
+}
+#section-info-product{
+  line-height: 2.4rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+@media (max-width: 690px) {
+  section#dashboard-section{
+    gap: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  
+  }
+  #action-section{
+    grid-template-columns: auto;
+  }
+  .items-table, .item-row button{
+    font-size: 0.7rem;
+    width: 100%;
+  }
+  .item-row button{
+    padding: 0.35rem 0.5rem;
+  }
+  .header-row th{
+    padding: 0.45rem;
+    text-align: none;
+  }
+}
+
+@media (max-width: 470px){
+  #section-info-product{
+    font-size: 1rem;
+  }
+  #product-info > span{
+    width: 100%;
+  }
+  .button-actions{
+    flex-direction: column;
+  }
+  body{
+    padding: 0.4rem;
+  }
+  form#item-edit-and-create-container > #inputs-edit-and-create > div, select{
+    width: 100%;
+  }
+}
+.price-input-container {
+  position: relative;
+  display: inline-block;
+}
+.price-input-container > input{
+  padding-left: 2.3rem !important;
+}
+.currency-symbol {
+  color: #ccc;
+  position: absolute;
+  left: 0.5rem; 
+  top: 73%;
+  transform: translateY(-50%);
+}
+.active{
+  color: #60A5FA;
+}
