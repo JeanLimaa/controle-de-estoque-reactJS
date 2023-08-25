@@ -11,7 +11,7 @@ export default function HeaderLayout() {
             <header>
                 <section id="section-default-header">
                     <div>
-                        <h4>REACT STOCK</h4>
+                        <h4>QUANTUM STOCK</h4>
                         <h1 className="title">Dashboard</h1>
                     </div>
                     <nav>
