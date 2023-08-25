@@ -2,7 +2,7 @@
 
 Olá, seja bem vindo!
 
-Antes de tudo, cocê pode acessar através desse link: https://controle-de-estoque-react-js.vercel.app
+Antes de tudo, você pode acessar através desse link: https://controle-de-estoque-react-js.vercel.app
 
 Esse site para controle de estoque foi feito com ReactJS, Javascript e css, com o objetivo de por em prática meus aprendizados em React.
 
