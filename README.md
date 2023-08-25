@@ -1,8 +1,11 @@
-# React + Vite
+# Controle de estoque com ReactJS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá, seja bem vindo!
 
-Currently, two official plugins are available:
+Antes de tudo, você pode acessar através desse link: https://controle-de-estoque-react-js.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Esse site para controle de estoque é uma SPA e foi feita utilizando o ReactJS e react-router-dom para criação das rotas, além de Javascript e CSS. Com o objetivo de por em prática meus aprendizados em React.
+
+E por essa razão os dados são salvos no localStorage do usuário, não necessitando a utilização de um BD.
+
+Logo logo escrevei mais sobre, aqui... 
